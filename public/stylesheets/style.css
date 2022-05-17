@@ -7,7 +7,7 @@
 }
 
 body{
-  background: #b8e4d5;
+  background: #b8e4d5 !important;
 }
 
 /* ***************INDEX**************** */
@@ -120,7 +120,12 @@ footer>a{
   bottom: 0;
 }
 
-
+/* admin table*********************** */
+.admin_table{
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
 =======
 >>>>>>> Stashed changes
