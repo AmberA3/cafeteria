@@ -120,7 +120,36 @@ footer>a{
   bottom: 0;
 }
 
+<<<<<<< HEAD
 
+=======
+/* admin links*********************** */
+.admin_links{
+  /* border: 1px solid red; */
+  padding: 20%;
+  position: relative;
+  text-align: center;
+}
+
+.admin_links>a{
+  text-decoration: none;
+  color: #b8e4d5;
+  background: #38584e;
+  padding: 5%;
+  margin: 0 4%;
+}
+.admin_links a:hover{
+  background: #4b7668;
+  color: #95baad;
+}
+
+/* lunches table*********************** */
+.lunch_table{
+width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+>>>>>>> refs/remotes/origin/master
 /* Meals form******************* */
 form{
   border: 1px solid black;
@@ -133,9 +162,13 @@ form{
   padding: 10px !important;
 }
 
+<<<<<<< HEAD
 /* admin table*********************** */
 .admin_table{
   width: 80%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
+=======
+
+>>>>>>> refs/remotes/origin/master
