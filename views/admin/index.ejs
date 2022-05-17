@@ -24,88 +24,48 @@
     
       <a href="/login">Sign in</a>
     </header>
-    
-    <h1><%= title %></h1><br><br>
-    
-    <div class="admin_table">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Lunch ID</th>
-            <th scope="col">Meal ID</th>
-            <th scope="col">Trainee ID</th>
-            <th scope="col">Date</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% if(orders.length){ for(var i=0; i< orders.length; i++) { %>
-            <tr>
-              <td scope="row"><%= orders[i].id %></td>
-              <td>
-                <%= orders[i].meal_option_id %>
-              </td>
-              <td>
-                <%= orders[i].trainee_id %>
-              </td>
-              <td>
-                <%= orders[i].date %>
-              </td>
-              <td>
-                <i class="fa-solid fa-file-pen"></i>
-                <i class="fa-solid fa-trash-can"></i>
-              </td>
-            </tr>
-            <% } }else { %>
-            <tr>
-              <th scope="row" colspan="3">No Records Found</th>
-            </tr>
-          <% } %>
-          </tbody>
-      </table>
-      
-       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <!-- <table>
-        <thead>
-          <th>Lunch ID</th>
-          <th>Meal Id</th>
-          <th>Trainee ID</th>
-          <th>Date</th>
-          <th>Actions</th>
-        </thead>
-        <tbody>
-          <% if(orders.length){ for(var i=0; i< orders.length; i++) { %>
-            <tr>
-              <td>
-                <%= orders[i].id %>
-              </td>
-              <td>
-                <%= orders[i].meal_option_id %>
-              </td>
-              <td>
-                <%= orders[i].trainee_id %>
-              </td>
-              <td>
-                <%= orders[i].date %>
-              </td>
-              <td>actions</td>
-            </tr>
-            <% } }else { %>
-              <tr>
-                <td colspan="3">No Records Found</td>
-              </tr>
-              <% } %>
-        </tbody>
-      </table> -->
+
+    <div class="admin_links">
+      <a href="#">Trainees Table</a>
+      <a href="/admin/lunches">Lunch Table</a>
     </div>
+    
+    <footer>
+      <section>
+        <div class="one">
+          <h1>Caf Info</h1><br>
+          <a href="#">About the caf</a>
+          <a href="#">Menu</a>
+          <a href="#">Food Quality</a>
+          <a href="#">News & Press</a>
+        </div>
+    
+        <div class="two">
+          <h1>My Caf</h1><br>
+          <a href="#">Caf app</a>
+          <a href="#">Gift cards</a>
+          <a href="#">Reload card</a>
+          <a href="#">Check card balance</a>
+        </div>
+    
+        <div class="three">
+          <h1>Careers</h1><br>
+          <a href="#">Careers home</a>
+          <a href="#">Opportunities</a>
+          <a href="#">Apply</a>
+        </div>
+    
+        <div class="four">
+          <h1>Caf cares</h1><br>
+          <a href="#">Nutrition Explorer</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Caf foundation</a>
+          <a href="#">Diversity</a>
+        </div>
+      </section>
+    
+      <a href="#">ad</a>
+    </footer>
+    
   </body>
 </html>
