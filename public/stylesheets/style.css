@@ -10,7 +10,7 @@ body{
   background: #b8e4d5;
 }
 
-/* INDEX******************************* */
+/* ***************INDEX**************** */
 /* header*********************** */
 header{
   /* border: 1px solid red; */
@@ -24,14 +24,20 @@ header{
   width: 20%;
 }
 
-header a{
+header>a{
   border: 2px solid;
   border-radius: 20px;
   padding: 0.5% 1%;
   text-decoration: none;
   color: #4b7668;
 }
+header>a:hover{
+  border: none;
+  background: #4b7668;
+  color: #b8e4d5;
+}
 
+/* index_section*********************** */
 .index_section{
   display: flex;
   justify-content: space-between;
@@ -73,8 +79,45 @@ header a{
   width: 100%;
 }
 
+/* footer*********************** */
+footer{
+  background: #95baad;
+  padding: 5%;
+  position: relative;
+}
 
-/* .index_container{
-  background: url(https://cdn.discordapp.com/attachments/882362353507778613/975987566316781608/Untitled-3-01-removebg-preview.png);
-  background-size: cover;
-} */
+footer section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.one, .two, .three, .four{
+  display: flex;
+  flex-direction: column;
+}
+.one h1, .two h1, .three h1, .four h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  color: #38584e;
+}
+.one a,.two a, .three a, .four a{
+  text-decoration: none;
+  color: white;
+  padding: 2% 0 ;
+}
+.one a:hover, .two a:hover, .three a:hover, .four a:hover{
+  text-decoration: underline #38584e;
+}
+
+/* admin login*********************** */
+footer>a{
+  border: 1px solid red;
+  text-decoration: none;
+  color: #95baad;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+
