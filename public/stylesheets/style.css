@@ -7,7 +7,7 @@
 }
 
 body{
-  background: #b8e4d5;
+  background: #b8e4d5 !important;
 }
 
 /* ***************INDEX**************** */
@@ -31,6 +31,7 @@ header>a{
   text-decoration: none;
   color: #4b7668;
 }
+
 header>a:hover{
   border: none;
   background: #4b7668;
@@ -119,6 +120,7 @@ footer>a{
   bottom: 0;
 }
 
+<<<<<<< HEAD
 /* Meals form******************* */
 form{
   border: 1px solid black;
@@ -130,3 +132,11 @@ form{
 .form-check-input{
   padding: 10px !important;
 }
+=======
+/* admin table*********************** */
+.admin_table{
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+>>>>>>> 9b3cb9deb092189d7a50ce8642f08d7f09c0a971

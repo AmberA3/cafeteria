@@ -1,0 +1,97 @@
+git
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* header*********************** */
+header{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img{
+  width: 40%;
+}
+
+header a{
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 0.5% 1%;
+  text-decoration: none;
+  color: #4b7668;
+}
+
+  
+  body{
+    background: #b8e4d5;
+  }
+  
+  /* table{
+    background: #4c685f;
+    color: aliceblue;
+    position: relative;
+    text-align: center;
+    top: 10em;
+    padding: 10px;
+    border: black 2px solid;
+    box-shadow: 10px 0 10px #4c685f;
+    width: 100%;
+    height: 13em;
+  }
+
+  table,td .odd{
+    background: #64b79d;
+  }
+
+  table,th{
+    border-bottom: 2px rgb(47, 47, 47) solid;
+
+  }
+  
+  table,tr{
+    border-bottom: 1px rgb(47, 47, 47) solid;
+  }
+
+  table,tr :hover{
+    border: 2px #b8e4d5 solid;
+    box-shadow: 2px 0 4px;
+    padding: 4px;
+  }
+
+  */
+
+  /* footer*********************** */
+footer{
+  background: #95baad;
+  padding: 5%;
+  position: relative;
+}
+
+footer section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.one, .two, .three, .four{
+  display: flex;
+  flex-direction: column;
+}
+.one h1, .two h1, .three h1, .four h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  color: #38584e;
+}
+.one a,.two a, .three a, .four a{
+  text-decoration: none;
+  color: white;
+  padding: 2% 0 ;
+}
+.one a:hover, .two a:hover, .three a:hover, .four a:hover{
+  text-decoration: underline #38584e;
+}
