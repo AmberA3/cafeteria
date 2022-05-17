@@ -26,10 +26,10 @@
         for(var i = 0; i< orders.length; i++) {
       %> 
         <tr>
-          <td><%= order[i].id %></td>
-          <td><%= order[i].meal_option_id %></td>
-          <td><%= order[i].trainee_id %></td>
-          <td><%= order[i].date.toLocaleDateString() %></td>
+          <td><%= orders[i].id %></td>
+          <td><%= orders[i].meal_option_id %></td>
+          <td><%= orders[i].trainee_id %></td>
+          <td><%= orders[i].date %></td>
         </tr>
       <% } 
       }else { %>
