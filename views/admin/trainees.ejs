@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/tstyle.css">
-    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -18,14 +20,16 @@
   
     <a href="">Sign in</a>
   </header>
-
+    <div class="container">
     <table class="table table-striped">
         <thead>
-          <th>ID</th>
-          <th>Cohort</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Date</th>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Cohort</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date</th>
+          </tr>
         </thead>
         <tbody>
         <% 
@@ -34,11 +38,11 @@
           for(var i = 0; i< trainees.length; i++) {
         %> 
           <tr>
-            <td><%= trainees[i].id %></td>
-            <td><%= trainees[i].cohort %></td>
-            <td><%= trainees[i].firstNm %></td>
-            <td><%= trainees[i].lastNm %></td>
-            <td><%= trainees[i].date_joined.toLocaleDateString() %></td>
+            <td scope="row"><%= trainees[i].id %></td>
+            <td scope="row"><%= trainees[i].cohort %></td>
+            <td scope="row"><%= trainees[i].firstNm %></td>
+            <td scope="row"><%= trainees[i].lastNm %></td>
+            <td scope="row"><%= trainees[i].date_joined.toLocaleDateString() %></td>
           </tr>
         <% } 
         }else { %>
@@ -48,7 +52,7 @@
         <% } %>
         </tbody>
       </table>
-
+    </div>
       <footer>
         <section>
           <div class="one">
@@ -85,5 +89,6 @@
 
         <a href="#">ad</a>
       </footer>
+      
 </body>
 </html>
