@@ -1,8 +1,80 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+body{
+  background: #b8e4d5;
 }
+
+/* INDEX******************************* */
+/* header*********************** */
+header{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img{
+  width: 20%;
+}
+
+header a{
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 0.5% 1%;
+  text-decoration: none;
+  color: #4b7668;
+}
+
+.index_section{
+  display: flex;
+  justify-content: space-between;
+}
+.index_section .left{
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 5%;
+  text-align: left;
+}
+.index_section .left h1{
+  font-size: 80px;
+  font-weight: bold;
+  color: #4b7668;
+}
+.index_section .left h2{
+  font-size: 50px;
+  font-weight: bold;
+  color: #4b7668;
+}
+.index_section .left h3, .index_section .left p{
+  color: #4b7668;
+}
+.index_section .left a{
+  border-radius: 20px;
+  background:#4b7668;
+  padding: 2%;
+  text-decoration: none;
+  text-align: right;
+  color: white;
+}
+
+.index_section .right{
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 5%;
+}
+.index_section .right img{
+  width: 100%;
+}
+
+
+/* .index_container{
+  background: url(https://cdn.discordapp.com/attachments/882362353507778613/975987566316781608/Untitled-3-01-removebg-preview.png);
+  background-size: cover;
+} */
