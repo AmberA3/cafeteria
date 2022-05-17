@@ -4,13 +4,7 @@ var conn = require('../lib/db')
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  conn.query('Select * FROM lunchtbl', (err, results) => {
-    if (err) {
-      res.render('index', { title: 'Lunch Ordered', orders: '' }); 
-    }else {
-      res.render('index', { title: 'Lunch Ordered', orders: results});
-    }
-  });
+  res.render('index', { title: 'Lunch Ordered'});
 });
 
 module.exports = router;
