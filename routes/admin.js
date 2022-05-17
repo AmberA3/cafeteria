@@ -20,7 +20,7 @@ router.get('/trainees', (req, res) => {
         if (err) {
             res.render('admin/trainees', { title: 'Trainees', trainees: ''});
         }else {
-            res.render('admin/trainees', { title: 'Lunch Ordered', trainees: results});
+            res.render('admin/trainees', { title: 'Trainees', trainees: results});
         }
     });
 });
