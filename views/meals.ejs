@@ -14,22 +14,19 @@
 
     <table>
       <thead>
-        <th>Lunch ID</th>
         <th>Meal Id</th>
-        <th>Trainee ID</th>
-        <th>Date</th>
+       <th>Meal Options</th>
       </thead>
       <tbody>
       <% 
-        if(orders.length){
+        if(meals.length){
         
-        for(var i = 0; i< orders.length; i++) {
+        for(var i = 0; i< meals.length; i++) {
       %> 
         <tr>
-          <td><%= orders[i].id %></td>
-          <td><%= orders[i].meal_option_id %></td>
-          <td><%= orders[i].trainee_id %></td>
-          <td><%= orders[i].date %></td>
+          <td><%= meals[i].id %></td>
+          <!-- <td><%= meals[i].meal_category_id %></td> -->
+          <td><%= meals[i].option_name %></td>
         </tr>
       <% } 
       }else { %>
