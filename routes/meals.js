@@ -6,9 +6,9 @@ var conn = require('../lib/db')
 router.get('/', (req, res) => {
     conn.query('SELECT * FROM meal_opttble', (err, rows) => {
         if (err){
-            res.render('meals', { title: 'Lunch Ordered', meals: ''});
+            res.render('meals', { title: 'Menu', meals: ''});
         }else{
-            res.render('meals', { title: 'Lunch Ordered', meals: rows});
+            res.render('meals', { title: 'Menu', meals: rows});
         }
 
     });

@@ -4,7 +4,7 @@ var conn = require('../lib/db')
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Lunch Ordered'});
+  res.render('index', { title: 'Home'});
 });
 
 module.exports = router;
