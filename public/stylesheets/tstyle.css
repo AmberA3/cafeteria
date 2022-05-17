@@ -32,7 +32,7 @@ header a{
     background: #b8e4d5;
   }
   
-  table{
+  /* table{
     background: #4c685f;
     color: aliceblue;
     position: relative;
@@ -64,4 +64,34 @@ header a{
     padding: 4px;
   }
 
- 
+  */
+
+  /* footer*********************** */
+footer{
+  background: #95baad;
+  padding: 5%;
+  position: relative;
+}
+
+footer section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.one, .two, .three, .four{
+  display: flex;
+  flex-direction: column;
+}
+.one h1, .two h1, .three h1, .four h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  color: #38584e;
+}
+.one a,.two a, .three a, .four a{
+  text-decoration: none;
+  color: white;
+  padding: 2% 0 ;
+}
+.one a:hover, .two a:hover, .three a:hover, .four a:hover{
+  text-decoration: underline #38584e;
+}

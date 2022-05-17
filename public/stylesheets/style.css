@@ -31,7 +31,7 @@ header>a{
   text-decoration: none;
   color: #4b7668;
 }
-<<<<<<< Updated upstream
+
 header>a:hover{
   border: none;
   background: #4b7668;
@@ -126,6 +126,3 @@ footer>a{
   margin-left: 50%;
   transform: translateX(-50%);
 }
-
-=======
->>>>>>> Stashed changes
