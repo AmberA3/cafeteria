@@ -119,5 +119,14 @@ footer>a{
   bottom: 0;
 }
 
+/* Meals form******************* */
+form{
+  border: 1px solid black;
+  width: 80%;
+  margin: 10px;
+  padding: 20px;
+}
 
-
+.form-check-input{
+  padding: 10px !important;
+}
