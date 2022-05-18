@@ -6,9 +6,9 @@ var conn = require('../lib/db')
 router.get('/', (req, res) => {
     conn.query('SELECT * FROM lunchtbl', (err, results) => {
         if (err) {
-            res.render('admin/index', { title: 'Lunch Ordered', orders: ''});
+            res.render('admin/index', { title: 'Landing'});
         }else {
-            res.render('admin/index', { title: 'Lunch Ordered', orders: results});
+            res.render('admin/index', { title: 'Lading'});
         }
     });
 });
@@ -24,6 +24,15 @@ router.get('/trainees', (req, res) => {
     });
 });
 
-
+// GET LUNCH TABLE
+router.get('/lunches', (req, res) => {
+    conn.query('SELECT * FROM lunchtbl', (err, results) => {
+        if (err) {
+            res.render('admin/lunches', { title: 'Lunch Ordered', orders: ''});
+        }else {
+            res.render('admin/lunches', { title: 'Lunch Ordered', orders: results});
+        }
+    });
+});
 
 module.exports = router;
