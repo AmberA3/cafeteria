@@ -13,9 +13,10 @@ router.get('/', (req, res) => {
             }else{
                 res.render('meals', { title: 'Menu', meals: rows});
             }
-        
         });
-    };
+    }else {
+            res.redirect('/login');
+        }
 });
 
 router.post('/add', (req, res) => {
