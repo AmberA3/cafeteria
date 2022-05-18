@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
             res.render('admin/index', { title: 'Lunch Ordered', orders: results});
         }
     });
-
 });
 
 // GET TRAINEES TABLE
@@ -24,5 +23,7 @@ router.get('/trainees', (req, res) => {
         }
     });
 });
+
+
 
 module.exports = router;
