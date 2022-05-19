@@ -9,9 +9,9 @@ router.get('/', (req, res) => {
     if(req.session.loggedin === true){
         conn.query('SELECT * FROM meal_opttble', (err, rows) => {
             if (err){
-                res.render('meals', { title: 'Menu', meals: ''});
+                res.render('meals', { title: 'Menu', meals: '', id: ''});
             }else{
-                res.render('meals', { title: 'Menu', meals: rows});
+                res.render('meals', { title: 'Menu', meals: rows, id: req.session.tid});
             }
         });
     }else {
@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 
 router.post('/add', (req, res) => {
     const data = {
-        meal_option_id : req.body.meal_option_id
+
     }
 });
 
