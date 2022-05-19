@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
             res.render('admin/index', { title: 'Lading'});
         }
     });
-
 });
 
 // GET TRAINEES TABLE
