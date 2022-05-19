@@ -25,11 +25,11 @@ router.post('/authlogin', function(req, res, next) {
         //Assign session variables based on login credentials                
         req.session.loggedin = true;
         req.session.tid = results[0].id,
-        req.session.first_name = results[0].first_nm;
-        req.session.last_name = results[0].last_nm;
-        req.session.user_type = results[0].user_type;
+        req.session.firstNm = results[0].firstNm;
+        req.session.lastNm = results[0].lastNm;
+        req.session.meal_description = results[0].meal_description;
         res.redirect('/meals');
-        console.log(req.session.uid)
+        console.log(req.session.tid)
     }            
   })
 })

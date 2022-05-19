@@ -14,10 +14,7 @@ var mealsRouter = require('./routes/meals');
 var adminRouter = require('./routes/admin');
 var loginRouter = require('./routes/login');
 
-
-
 var app = express();
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
