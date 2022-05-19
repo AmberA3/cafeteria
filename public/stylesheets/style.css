@@ -112,17 +112,15 @@ footer section{
 
 /* admin login*********************** */
 footer>a{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-decoration: none;
   color: #95baad;
   position: absolute;
   right: 0;
   bottom: 0;
+  cursor: none;
 }
 
-<<<<<<< HEAD
-
-=======
 /* admin links*********************** */
 .admin_links{
   /* border: 1px solid red; */
@@ -149,7 +147,6 @@ width: 80%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
->>>>>>> refs/remotes/origin/master
 /* Meals form******************* */
 form{
   border: 1px solid black;
@@ -162,13 +159,3 @@ form{
   padding: 10px !important;
 }
 
-<<<<<<< HEAD
-/* admin table*********************** */
-.admin_table{
-  width: 80%;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-=======
-
->>>>>>> refs/remotes/origin/master
