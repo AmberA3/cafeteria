@@ -16,5 +16,6 @@ This application is a cafeteria ordering system that you can order lunch at any 
 
 -   CSS 
 -   ejs
+-   Javascript
 -   Nodejs
 -   Express.js
