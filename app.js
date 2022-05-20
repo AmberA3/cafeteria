@@ -33,7 +33,8 @@ app.use(session({
     secret: 'secREt$#code$%3245',
     resave: false,
     saveUninitialized: true,
-    cookie: { maxAge: 120000 }
+    // cookie: { maxAge: 990000 }
+    cookie: { maxAge: 3600000 }
 }))
 
 app.use(flash());
